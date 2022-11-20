@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+			<title>Addition of two numbers</title>
+			<style type="text/css">
+            #container
+            {
+                background-color:lightgray;
+	            width:20%;
+	           padding:10px
+            }
+            </style>
+	</head>
+	<body>
+		<div id="container">
+		        <header>
+                    <h1>Number Form</h1>
+                </header>
+				<form>
+				<label for="txtNum1">Number1:</label></br/>
+			    <input type="text" name="txtNum1" id="txtNum1" placeholder="enter single digit number" value="0"/><br/>
+			    <label for="txtNum2">Number2:</label></br/>
+		        <input type="text" name="txtNum2" id="txtNum2" placeholder="enter single digit number" value="0"/><br/>
+		        <label for="txtSum">Sum:</label></br/>
+	            <input type="text" name="txtSum" id="txtSum" value="0" disabled/><br/></br>
+                <input type="button" name="Submit" id="Submit" value="Submit" onclick="add()"/>
+                <input type="button" name="Reset" id="Reset" value="Reset" onclick="reset()"/>
+				</form>
+		 </div>
+		 <footer></footer>
+         <script type="text/javascript">
+	     function reset() 
+	     {
+	      document.getElementById("txtNum1").value="0";
+		  document.getElementById("txtNum2").value="0";
+		  document.getElementById("txtSum").value="0";		  
+	     }
+	   
+	     function add()
+	     {
+	     var num1 = Number(document.getElementById("txtNum1").value);
+		 var num2 = Number(document.getElementById("txtNum2").value);
+		 var sum = num1 + num2;
+		 document.getElementById("txtSum").value=String(sum);
+		 //alert(typeof String(sum));		 
+	     }
+	   </script>
+      
+    </body>
+</html>

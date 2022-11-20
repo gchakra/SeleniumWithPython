@@ -1,0 +1,14 @@
+Implemented successfully for my personal website adding two numbers developed as a plain html page on tomcat
+
+Output:
+C:\Users\cg179\PycharmProjects\pythonProject1\venv\Scripts\python.exe C:\Users\cg179\PycharmProjects\pythonProject1\main.py 
+ProgramName, Python tomcat automation
+domain localhost:8080
+Page tile Addition of two numbers
+Content
+[<selenium.webdriver.remote.webelement.WebElement (session="644bde5888e415b8b952cba580a3759b", element="6157595f-c28a-439b-8247-9d8fe0455c1e")>]
+txtNum 1 : 010
+txtNum 2 : 015
+txtSum : 25
+Expected Value :
+25
